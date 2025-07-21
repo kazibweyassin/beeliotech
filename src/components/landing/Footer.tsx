@@ -56,9 +56,8 @@ export default function Footer() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Link href="/" className="flex items-center space-x-3">
+                <Link href="/" className="flex items-center">
                   <BeelioLogo size="lg" theme="dark" />
-                  <h2 className="text-3xl font-bold text-white">Beelio</h2>
                 </Link>
                 <p className="mt-4 text-gray-300 leading-relaxed">
                   Building smart digital infrastructure solutions that transform 

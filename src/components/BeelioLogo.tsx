@@ -121,9 +121,6 @@ const BeelioLogo: React.FC<BeelioLogoProps> = ({
       <span className={`font-bold ${textSizes[size]} ${textColor} tracking-tight`}>
         Beelio
       </span>
-      <span className={`${textSizes[size]} text-cyan-500 ml-1 font-light`}>
-        Tech
-      </span>
     </div>
   )
 

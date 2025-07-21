@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Beelio - Peer-to-Peer Lending Platform",
-  description: "Microloans for unbanked users in Africa",
+  title: "Beelio - Empowering the Future of Digital Infrastructure in Africa",
+  description: "Empowering communities through innovative digital infrastructure solutions.",
 };
 
 export default function RootLayout({
