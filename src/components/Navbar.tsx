@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import BeelioLogo from '@/components/BeelioLogo'
 
 export default function Navbar() {
   const { user, profile, signOut } = useAuth()
@@ -29,7 +30,8 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0">
+            <Link href="/" className="flex-shrink-0 flex items-center space-x-2">
+              <BeelioLogo size="sm" />
               <h1 className="text-2xl font-bold text-blue-600">Beelio</h1>
             </Link>
           </div>
@@ -60,7 +62,7 @@ export default function Navbar() {
                   onClick={handleSignOut}
                   className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
                 >
-                  Sign Out
+                  {/* Sign Out */}
                 </button>
               </>
             ) : (
@@ -69,7 +71,7 @@ export default function Navbar() {
                   href="/auth"
                   className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
                 >
-                  Sign In
+                  {/* Sign In */}
                 </Link>
                 <Link
                   href="#contact"

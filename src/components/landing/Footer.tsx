@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react'
+import BeelioLogo from '@/components/BeelioLogo'
 
 export default function Footer() {
   const navigation = {
@@ -55,7 +56,8 @@ export default function Footer() {
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Link href="/" className="flex items-center">
+                <Link href="/" className="flex items-center space-x-3">
+                  <BeelioLogo size="lg" theme="dark" />
                   <h2 className="text-3xl font-bold text-white">Beelio</h2>
                 </Link>
                 <p className="mt-4 text-gray-300 leading-relaxed">

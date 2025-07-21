@@ -33,6 +33,31 @@ export default function CaseStudiesPage() {
       }
     },
     {
+      id: 'ghana-cybersecurity-shield',
+      title: 'National Cybersecurity Infrastructure Protection',
+      client: 'Government of Ghana - National Cyber Security Centre',
+      category: 'Cybersecurity',
+      location: 'Accra, Ghana',
+      duration: '24 months',
+      year: '2022-2024',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80',
+      challenge: 'Ghana faced increasing cyber threats with 300% rise in attacks targeting government infrastructure and financial institutions, risking national security.',
+      solution: 'Implemented comprehensive cybersecurity framework with AI-powered threat detection, real-time monitoring, and incident response systems.',
+      results: [
+        { metric: '50+', description: 'Government agencies protected' },
+        { metric: '99.9%', description: 'Threat detection accuracy rate' },
+        { metric: '0', description: 'Successful major breaches since deployment' },
+        { metric: '15min', description: 'Average threat response time' }
+      ],
+      technologies: ['AI Threat Detection', 'SIEM Systems', 'Behavioral Analytics', 'Zero Trust Architecture'],
+      impact: 'Secured critical national infrastructure, protected citizen data, and positioned Ghana as a cybersecurity leader in West Africa.',
+      testimonial: {
+        quote: "Beelio's cybersecurity solution has fortified our digital infrastructure. We now have confidence in our ability to protect national assets.",
+        author: 'Dr. Albert Antwi-Boasiako',
+        position: 'Director, National Cyber Security Centre'
+      }
+    },
+    {
       id: 'kenya-transport-optimization',
       title: 'AI-Powered Traffic Management System for Nairobi',
       client: 'Kenya Urban Roads Authority',

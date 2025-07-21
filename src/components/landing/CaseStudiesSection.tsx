@@ -18,6 +18,16 @@ export default function CaseStudiesSection() {
       category: 'Energy & Utilities'
     },
     {
+      id: 'ghana-cybersecurity-shield',
+      title: 'National Cybersecurity Infrastructure',
+      location: 'Accra, Ghana',
+      year: '2023',
+      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      description: 'Implemented comprehensive cybersecurity framework protecting 50+ government agencies and critical infrastructure.',
+      results: ['50+ agencies protected', '99.9% threat detection rate', '0 successful breaches'],
+      category: 'Cybersecurity'
+    },
+    {
       id: 'kenya-transport-optimization',
       title: 'AI-Powered Traffic Management',
       location: 'Nairobi, Kenya',
@@ -26,16 +36,6 @@ export default function CaseStudiesSection() {
       description: 'AI-driven traffic optimization reducing commute times by 45% and saving $800K daily in economic losses.',
       results: ['45% reduction in commute time', '$800K daily economic savings', '25% decrease in carbon emissions'],
       category: 'Transport & Mobility'
-    },
-    {
-      id: 'rwanda-digital-services',
-      title: 'Digital Government Services Platform',
-      location: 'Kigali, Rwanda',
-      year: '2022-2024',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'Comprehensive digital platform enabling online access to 150+ government services for 2.8M citizens.',
-      results: ['150+ services digitized', '90% reduction in processing time', '2.8M active users'],
-      category: 'Government & Institutions'
     }
   ]
 

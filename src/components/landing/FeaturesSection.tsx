@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Zap, Cpu, Cog, Brain, ArrowRight } from 'lucide-react'
+import { Zap, Cpu, Cog, Brain, Shield, ArrowRight } from 'lucide-react'
 
 export default function FeaturesSection() {
   const features = [
@@ -21,6 +21,14 @@ export default function FeaturesSection() {
       features: ['Sensor networks', 'Edge computing', 'Connectivity solutions', 'Data analytics'],
       color: 'bg-blue-500',
       gradient: 'from-blue-400 to-purple-500'
+    },
+    {
+      icon: Shield,
+      title: 'Cybersecurity Solutions',
+      description: 'Enterprise-grade cybersecurity frameworks protecting critical infrastructure, data, and digital assets across African organizations and communities.',
+      features: ['Threat detection & response', 'Data encryption', 'Security auditing', 'Compliance management'],
+      color: 'bg-red-500',
+      gradient: 'from-red-400 to-pink-500'
     },
     {
       icon: Cog,

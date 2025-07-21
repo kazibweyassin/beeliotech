@@ -1,6 +1,7 @@
 import HeroSection from '@/components/landing/HeroSection'
 import AboutSection from '@/components/landing/AboutSection'
 import FeaturesSection from '@/components/landing/FeaturesSection'
+import CybersecuritySection from '@/components/landing/CybersecuritySection'
 import IndustriesSection from '@/components/landing/IndustriesSection'
 import CaseStudiesSection from '@/components/landing/CaseStudiesSection'
 import PartnersSection from '@/components/landing/PartnersSection'
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <FeaturesSection />
+      <CybersecuritySection />
       <IndustriesSection />
       <CaseStudiesSection />
       <PartnersSection />
