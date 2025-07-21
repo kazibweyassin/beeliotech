@@ -13,28 +13,28 @@ export default function CaseStudiesSection() {
       location: 'Gulu District, Uganda',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'Deployed intelligent solar microgrids serving 5,200 households in rural Uganda with 99.2% uptime.',
-      results: ['5,200 households connected', '85% reduction in energy costs', '40% increase in local business revenue'],
+      description: 'Deployed intelligent solar microgrids serving 850 households in rural Uganda with 97.5% uptime.',
+      results: ['850 households connected', '65% reduction in energy costs', '25% increase in local business revenue'],
       category: 'Energy & Utilities'
     },
     {
       id: 'ghana-cybersecurity-shield',
-      title: 'National Cybersecurity Infrastructure',
+      title: 'Regional Cybersecurity Infrastructure',
       location: 'Accra, Ghana',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'Implemented comprehensive cybersecurity framework protecting 50+ government agencies and critical infrastructure.',
-      results: ['50+ agencies protected', '99.9% threat detection rate', '0 successful breaches'],
+      description: 'Implemented cybersecurity framework protecting 12 government agencies and critical infrastructure.',
+      results: ['12 agencies protected', '95% threat detection rate', '0 successful breaches'],
       category: 'Cybersecurity'
     },
     {
       id: 'kenya-transport-optimization',
-      title: 'AI-Powered Traffic Management',
+      title: 'Traffic Management System',
       location: 'Nairobi, Kenya',
       year: '2023',
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'AI-driven traffic optimization reducing commute times by 45% and saving $800K daily in economic losses.',
-      results: ['45% reduction in commute time', '$800K daily economic savings', '25% decrease in carbon emissions'],
+      description: 'Smart traffic optimization reducing commute times by 25% and improving traffic flow efficiency.',
+      results: ['25% reduction in commute time', '15% improvement in traffic flow', '18% decrease in fuel consumption'],
       category: 'Transport & Mobility'
     }
   ]

@@ -9,25 +9,25 @@ export default function SoftwareDevelopmentSection() {
     {
       icon: Globe,
       title: "Web Development",
-      description: "Modern, responsive websites and web applications built with cutting-edge technologies",
+      description: "Creating accessible digital platforms that connect African businesses to global opportunities",
       features: ["React & Next.js", "Progressive Web Apps", "E-commerce Solutions", "CMS Integration"]
     },
     {
       icon: Smartphone,
       title: "Mobile Development",
-      description: "Native and cross-platform mobile applications for iOS and Android",
-      features: ["React Native", "Flutter", "Native iOS/Android", "App Store Optimization"]
+      description: "Mobile-first solutions designed for Africa's growing smartphone ecosystem",
+      features: ["React Native", "Flutter", "Native iOS/Android", "Offline-First Design"]
     },
     {
       icon: Cloud,
       title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and serverless applications",
+      description: "Building scalable infrastructure that grows with African businesses and communities",
       features: ["AWS & Azure", "Serverless Architecture", "Microservices", "DevOps & CI/CD"]
     },
     {
       icon: Database,
       title: "Backend Development",
-      description: "Robust APIs and database solutions for enterprise applications",
+      description: "Robust systems that power the digital transformation of developing regions",
       features: ["RESTful APIs", "GraphQL", "Database Design", "Real-time Systems"]
     }
   ]
@@ -48,9 +48,9 @@ export default function SoftwareDevelopmentSection() {
   ]
 
   const stats = [
-    { number: "50+", label: "Projects Delivered" },
-    { number: "15+", label: "Happy Clients" },
-    { number: "3", label: "Years Experience" },
+    { number: "8+", label: "Projects Delivered" },
+    { number: "6+", label: "Happy Clients" },
+    { number: "2024", label: "Founded" },
     { number: "24/7", label: "Support Available" }
   ]
 
@@ -74,8 +74,8 @@ export default function SoftwareDevelopmentSection() {
             <span className="block text-blue-600">Built for Your Success</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From concept to deployment, we create innovative software solutions that drive 
-            business growth and digital transformation across Africa and beyond.
+            Empowering African businesses and communities through innovative software solutions. 
+            Our mission is to bridge the digital divide and accelerate technological transformation across developing regions.
           </p>
         </motion.div>
 
@@ -126,7 +126,7 @@ export default function SoftwareDevelopmentSection() {
               Our Technology Stack
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              We use the latest and most reliable technologies to build robust, scalable applications
+              Building the future of Africa with cutting-edge technologies and scalable solutions
             </p>
           </div>
           
@@ -157,10 +157,10 @@ export default function SoftwareDevelopmentSection() {
         >
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Proven Track Record
+              Building Trust Through Innovation
             </h3>
             <p className="text-blue-100 max-w-2xl mx-auto">
-              Building trust through consistent delivery and exceptional results
+              Every project brings us closer to our vision of a digitally empowered Africa
             </p>
           </div>
           
@@ -194,10 +194,10 @@ export default function SoftwareDevelopmentSection() {
           className="text-center mt-16"
         >
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
-            Ready to Build Your Next Software Solution?
+            Ready to Transform Your Vision into Reality?
           </h3>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let&apos;s discuss your project requirements and create something amazing together.
+            Join us in building the digital infrastructure that will power Africa&apos;s next chapter of growth and innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#contact">
@@ -206,7 +206,7 @@ export default function SoftwareDevelopmentSection() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg"
               >
-                Start Your Project
+                Start Your Journey
               </motion.button>
             </Link>
             <Link href="/case-studies">
@@ -215,7 +215,7 @@ export default function SoftwareDevelopmentSection() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
               >
-                View Portfolio
+                Our Vision
               </motion.button>
             </Link>
           </div>

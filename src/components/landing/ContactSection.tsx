@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Calendar } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Calendar, CheckCircle, AlertCircle } from 'lucide-react'
 import { useState } from 'react'
 
 export default function ContactSection() {
@@ -13,10 +13,39 @@ export default function ContactSection() {
     service: 'consultation'
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      // Simulate form submission (replace with actual API call)
+      await new Promise(resolve => setTimeout(resolve, 2000))
+      
+      // In a real implementation, you would send this to your backend API or email service
+      console.log('Form submitted:', formData)
+      
+      // Create mailto link as fallback
+      const mailtoLink = `mailto:beeliotechnologies@gmail.com?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ACompany: ${formData.company}%0D%0AService: ${formData.service}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`
+      window.open(mailtoLink)
+      
+      setSubmitStatus('success')
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        message: '',
+        service: 'consultation'
+      })
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -166,12 +195,34 @@ export default function ContactSection() {
                 />
               </div>
 
+              {/* Submit Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="flex items-center space-x-2 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <CheckCircle className="h-5 w-5 text-green-600" />
+                  <span className="text-green-800">Message sent successfully! We&apos;ll get back to you soon.</span>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="flex items-center space-x-2 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <AlertCircle className="h-5 w-5 text-red-600" />
+                  <span className="text-red-800">Failed to send message. Please try again or email us directly.</span>
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center group"
+                disabled={isSubmitting}
+                className={`w-full font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center group ${
+                  isSubmitting 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : 'bg-blue-600 hover:bg-blue-700 text-white'
+                }`}
               >
-                <Send className="mr-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                Send Message
+                <Send className={`mr-2 h-5 w-5 transition-transform ${
+                  isSubmitting ? 'animate-pulse' : 'group-hover:translate-x-1'
+                }`} />
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </motion.div>

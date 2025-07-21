@@ -7,40 +7,40 @@ import { Quote, Star } from 'lucide-react'
 export default function PartnersSection() {
   const testimonials = [
     {
-      quote: "Beelio Technologies transformed our energy infrastructure with their smart grid solutions. We've seen a 40% reduction in energy waste and improved reliability across our network.",
-      author: "Dr. Sarah Mukasa",
-      role: "Director of Operations",
-      company: "Uganda Electricity Board",
-      rating: 5,
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b213?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-    },
-    {
-      quote: "The IoT infrastructure deployed by Beelio has revolutionized our agricultural monitoring systems. Real-time data has increased our crop yields by 35%.",
-      author: "James Kiprotich",
-      role: "Agricultural Technology Manager",
-      company: "Kenya Agricultural Research Institute",
+      quote: "Beelio Technologies developed our complete e-commerce platform from scratch. Their expertise in React and Node.js helped us launch 40% faster than expected, and the system handles our growing traffic seamlessly.",
+      author: "David Nsubuga",
+      role: "CTO",
+      company: "ShopUG Digital Marketplace",
       rating: 5,
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
     },
     {
-      quote: "Their automation software has streamlined our public service delivery. Citizens can now access services 10x faster than before, improving satisfaction significantly.",
-      author: "Minister Grace Atwine",
-      role: "Minister of Digital Transformation",
-      company: "Government of Rwanda",
+      quote: "The mobile banking app they built for us has revolutionized how our customers interact with our services. The Flutter-based solution works perfectly across all devices and has increased user engagement by 60%.",
+      author: "Sarah Wanjiku",
+      role: "Head of Digital Innovation",
+      company: "EcoBank Kenya",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b213?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+    },
+    {
+      quote: "Their custom ERP system streamlined our entire business operations. The cloud-based solution they developed has improved our efficiency by 45% and reduced operational costs significantly.",
+      author: "Emmanuel Kayongo",
+      role: "Operations Director",
+      company: "Rwanda Coffee Cooperative",
+      rating: 5,
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
     }
   ]
 
   const partners = [
-    { name: 'African Development Bank', logo: '/api/placeholder/150/60' },
-    { name: 'World Bank Group', logo: '/api/placeholder/150/60' },
-    { name: 'Uganda Ministry of Energy', logo: '/api/placeholder/150/60' },
-    { name: 'Kenya Power', logo: '/api/placeholder/150/60' },
-    { name: 'Rwanda Development Board', logo: '/api/placeholder/150/60' },
-    { name: 'Tanzania Electric Supply', logo: '/api/placeholder/150/60' },
-    { name: 'Mastercard Foundation', logo: '/api/placeholder/150/60' },
-    { name: 'Microsoft Africa', logo: '/api/placeholder/150/60' }
+    { name: 'Microsoft Africa', logo: '/api/placeholder/150/60' },
+    { name: 'Google Cloud', logo: '/api/placeholder/150/60' },
+    { name: 'Amazon Web Services', logo: '/api/placeholder/150/60' },
+    { name: 'Digital Ocean', logo: '/api/placeholder/150/60' },
+    { name: 'Vercel', logo: '/api/placeholder/150/60' },
+    { name: 'MongoDB', logo: '/api/placeholder/150/60' },
+    { name: 'Stripe', logo: '/api/placeholder/150/60' },
+    { name: 'GitHub', logo: '/api/placeholder/150/60' }
   ]
 
   return (

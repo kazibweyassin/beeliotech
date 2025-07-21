@@ -33,9 +33,9 @@ export default function CybersecuritySection() {
   ]
 
   const stats = [
-    { value: '99.9%', label: 'Threat Detection Rate', icon: Shield },
-    { value: '15min', label: 'Average Response Time', icon: AlertTriangle },
-    { value: '500+', label: 'Organizations Protected', icon: Users },
+    { value: '98.5%', label: 'Threat Detection Rate', icon: Shield },
+    { value: '30min', label: 'Average Response Time', icon: AlertTriangle },
+    { value: '25+', label: 'Organizations Protected', icon: Users },
     { value: '0', label: 'Successful Breaches', icon: CheckCircle }
   ]
 
@@ -155,15 +155,15 @@ export default function CybersecuritySection() {
           <h3 className="text-3xl font-bold mb-6">Africa&apos;s Cybersecurity Challenge</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="text-4xl font-bold text-red-400 mb-2">230%</div>
+              <div className="text-4xl font-bold text-red-400 mb-2">180%</div>
               <div className="text-gray-300">Increase in cyber attacks across Africa (2023)</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-red-400 mb-2">$4.2B</div>
+              <div className="text-4xl font-bold text-red-400 mb-2">$2.1B</div>
               <div className="text-gray-300">Annual cost of cybercrime in Africa</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-red-400 mb-2">85%</div>
+              <div className="text-4xl font-bold text-red-400 mb-2">75%</div>
               <div className="text-gray-300">Of organizations lack adequate protection</div>
             </div>
           </div>

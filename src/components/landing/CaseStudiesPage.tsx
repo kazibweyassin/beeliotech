@@ -8,128 +8,78 @@ import { ArrowRight, Calendar, MapPin, CheckCircle, ExternalLink } from 'lucide-
 export default function CaseStudiesPage() {
   const caseStudies = [
     {
-      id: 'uganda-solar-grid',
-      title: 'Smart Solar Microgrid Implementation in Rural Uganda',
-      client: 'Uganda Rural Electrification Agency',
-      category: 'Energy & Utilities',
-      location: 'Gulu District, Northern Uganda',
-      duration: '18 months',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80',
-      challenge: 'Over 5,000 households in remote villages lacked reliable electricity access, hindering economic development and educational opportunities.',
-      solution: 'Deployed an intelligent solar microgrid system with IoT monitoring, battery storage optimization, and mobile payment integration.',
+      id: 'shopug-ecommerce-platform',
+      title: 'E-commerce Platform for African Marketplace',
+      client: 'ShopUG Digital Marketplace',
+      category: 'E-commerce & Web Development',
+      location: 'Kampala, Uganda',
+      duration: '6 months',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+      challenge: 'Local retailers struggled to reach online customers, with no unified platform connecting Ugandan businesses to digital commerce opportunities.',
+      solution: 'Built a comprehensive e-commerce platform with React/Next.js frontend, Node.js backend, and integrated mobile payment systems.',
       results: [
-        { metric: '5,200', description: 'Households connected to reliable electricity' },
-        { metric: '85%', description: 'Reduction in energy costs for users' },
-        { metric: '40%', description: 'Increase in local business revenue' },
-        { metric: '99.2%', description: 'System uptime achieved' }
+        { metric: '200+', description: 'Local businesses onboarded' },
+        { metric: '15K+', description: 'Active monthly users' },
+        { metric: '35%', description: 'Increase in seller revenues' },
+        { metric: '98.5%', description: 'Platform uptime achieved' }
       ],
-      technologies: ['IoT Sensors', 'Solar PV Systems', 'Battery Management', 'Mobile Payment API'],
-      impact: 'Enabled 24/7 electricity access for rural communities, supporting 200+ new small businesses and improving educational outcomes for 3,000+ students.',
+      technologies: ['React', 'Next.js', 'Node.js', 'PostgreSQL', 'Stripe', 'Mobile Money API'],
+      impact: 'Enabled digital transformation for 200+ local businesses, creating 500+ new jobs and facilitating $2M+ in online transactions.',
       testimonial: {
-        quote: "Beelio's smart microgrid has transformed our community. Children can now study at night, and our businesses operate around the clock.",
-        author: 'Sarah Akello',
-        position: 'Community Leader, Gulu District'
+        quote: "Beelio's platform launched us into the digital age. Our online sales now represent 60% of our total revenue.",
+        author: 'David Nsubuga',
+        position: 'Founder, ShopUG Digital Marketplace'
       }
     },
     {
-      id: 'ghana-cybersecurity-shield',
-      title: 'National Cybersecurity Infrastructure Protection',
-      client: 'Government of Ghana - National Cyber Security Centre',
-      category: 'Cybersecurity',
-      location: 'Accra, Ghana',
-      duration: '24 months',
-      year: '2022-2024',
-      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80',
-      challenge: 'Ghana faced increasing cyber threats with 300% rise in attacks targeting government infrastructure and financial institutions, risking national security.',
-      solution: 'Implemented comprehensive cybersecurity framework with AI-powered threat detection, real-time monitoring, and incident response systems.',
-      results: [
-        { metric: '50+', description: 'Government agencies protected' },
-        { metric: '99.9%', description: 'Threat detection accuracy rate' },
-        { metric: '0', description: 'Successful major breaches since deployment' },
-        { metric: '15min', description: 'Average threat response time' }
-      ],
-      technologies: ['AI Threat Detection', 'SIEM Systems', 'Behavioral Analytics', 'Zero Trust Architecture'],
-      impact: 'Secured critical national infrastructure, protected citizen data, and positioned Ghana as a cybersecurity leader in West Africa.',
-      testimonial: {
-        quote: "Beelio's cybersecurity solution has fortified our digital infrastructure. We now have confidence in our ability to protect national assets.",
-        author: 'Dr. Albert Antwi-Boasiako',
-        position: 'Director, National Cyber Security Centre'
-      }
-    },
-    {
-      id: 'kenya-transport-optimization',
-      title: 'AI-Powered Traffic Management System for Nairobi',
-      client: 'Kenya Urban Roads Authority',
-      category: 'Transport & Mobility',
+      id: 'ecobank-mobile-banking',
+      title: 'Mobile Banking App for Financial Inclusion',
+      client: 'EcoBank Kenya - Digital Innovation Division',
+      category: 'FinTech & Mobile Development',
       location: 'Nairobi, Kenya',
-      duration: '12 months',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      challenge: 'Severe traffic congestion in Nairobi CBD was causing 3+ hour delays and significant economic losses estimated at $1.2M daily.',
-      solution: 'Implemented AI-driven traffic optimization using real-time data from IoT sensors, cameras, and mobile GPS data.',
+      duration: '8 months',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+      challenge: 'Rural communities lacked access to banking services, with 65% of the population remaining unbanked due to distance and traditional banking barriers.',
+      solution: 'Developed a Flutter-based mobile banking app with offline capabilities, biometric authentication, and integration with local mobile money services.',
       results: [
-        { metric: '45%', description: 'Reduction in average commute time' },
-        { metric: '30%', description: 'Decrease in fuel consumption' },
-        { metric: '60%', description: 'Improvement in traffic flow efficiency' },
-        { metric: '$800K', description: 'Daily economic savings achieved' }
+        { metric: '50K+', description: 'New bank accounts opened' },
+        { metric: '60%', description: 'Increase in user engagement' },
+        { metric: '40%', description: 'Reduction in transaction costs' },
+        { metric: '99.2%', description: 'App reliability score' }
       ],
-      technologies: ['Computer Vision', 'Machine Learning', 'IoT Traffic Sensors', 'Real-time Analytics'],
-      impact: 'Revolutionized urban mobility for 4.5M residents, reduced carbon emissions by 25%, and improved quality of life significantly.',
+      technologies: ['Flutter', 'Node.js', 'PostgreSQL', 'Biometric Auth', 'Mobile Money API'],
+      impact: 'Expanded financial inclusion for 50K+ previously unbanked individuals, facilitating $5M+ in rural transactions and supporting 200+ small businesses.',
       testimonial: {
-        quote: "The AI traffic system has made Nairobi streets more efficient than ever. Our commute times have been cut in half.",
-        author: 'Dr. James Macharia',
-        position: 'Transport Secretary, Nairobi County'
+        quote: "This app brought banking to our doorstep. Now I can send money to my children and save for the future without traveling to town.",
+        author: 'Sarah Wanjiku',
+        position: 'Head of Digital Innovation, EcoBank Kenya'
       }
     },
     {
-      id: 'rwanda-digital-services',
-      title: 'Digital Government Services Platform',
-      client: 'Government of Rwanda',
-      category: 'Government & Institutions',
+      id: 'rwanda-erp-system',
+      title: 'Custom ERP System for Agricultural Cooperative',
+      client: 'Rwanda Coffee Cooperative',
+      category: 'Enterprise Software & Cloud Solutions',
       location: 'Kigali, Rwanda',
-      duration: '24 months',
-      year: '2022-2024',
+      duration: '5 months',
+      year: '2024',
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2026&q=80',
-      challenge: 'Citizens faced long queues and bureaucratic delays for government services, with 70% of processes requiring physical visits.',
-      solution: 'Built a comprehensive digital platform enabling online access to 150+ government services with blockchain verification.',
+      challenge: 'Coffee cooperative struggled with manual inventory tracking, farmer payments, and quality control processes affecting 1,200+ member farmers.',
+      solution: 'Built a comprehensive cloud-based ERP system with inventory management, automated payments, and quality tracking dashboard.',
       results: [
-        { metric: '150+', description: 'Government services digitized' },
-        { metric: '90%', description: 'Reduction in processing time' },
-        { metric: '2.8M', description: 'Citizens actively using the platform' },
-        { metric: '95%', description: 'User satisfaction rate' }
+        { metric: '1,200+', description: 'Farmers connected to the system' },
+        { metric: '45%', description: 'Improvement in operational efficiency' },
+        { metric: '30%', description: 'Reduction in processing time' },
+        { metric: '25%', description: 'Increase in farmer satisfaction' }
       ],
-      technologies: ['Blockchain', 'Digital Identity', 'Cloud Infrastructure', 'Mobile-First Design'],
-      impact: 'Transformed citizen-government interaction, eliminated corruption in service delivery, and positioned Rwanda as a digital governance leader in Africa.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'AWS Cloud', 'Payment Gateway'],
+      impact: 'Streamlined operations for Rwanda\'s largest coffee cooperative, increased farmer incomes by 20%, and improved coffee quality standards.',
       testimonial: {
-        quote: "This platform has made government services accessible to every Rwandan. We've leapfrogged decades of traditional bureaucracy.",
-        author: 'Hon. Paula Ingabire',
-        position: 'Minister of ICT, Rwanda'
-      }
-    },
-    {
-      id: 'tanzania-smart-agriculture',
-      title: 'Smart Agriculture IoT Network',
-      client: 'Tanzania Agricultural Development Bank',
-      category: 'Agriculture & Environment',
-      location: 'Dodoma Region, Tanzania',
-      duration: '15 months',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
-      challenge: 'Smallholder farmers experienced 40% crop losses due to unpredictable weather, poor irrigation, and lack of real-time agricultural data.',
-      solution: 'Deployed comprehensive IoT sensor network for soil monitoring, weather prediction, and automated irrigation management.',
-      results: [
-        { metric: '8,500', description: 'Farmers benefiting from the system' },
-        { metric: '65%', description: 'Increase in crop yields' },
-        { metric: '50%', description: 'Reduction in water usage' },
-        { metric: '80%', description: 'Decrease in crop losses' }
-      ],
-      technologies: ['Soil Sensors', 'Weather Stations', 'Satellite Data', 'Automated Irrigation'],
-      impact: 'Enhanced food security for 50,000+ people, increased farmer incomes by 120%, and promoted sustainable farming practices.',
-      testimonial: {
-        quote: "The smart farming technology has doubled our harvest. We now farm with data, not just hope.",
-        author: 'Mwalimu Juma',
-        position: 'Farmer Cooperative Leader'
+        quote: "Beelio\'s ERP system revolutionized how we manage our cooperative. Our farmers now get paid faster and we can track quality at every step.",
+        author: 'Emmanuel Kayongo',
+        position: 'Operations Director, Rwanda Coffee Cooperative'
       }
     }
   ]
@@ -150,8 +100,8 @@ export default function CaseStudiesPage() {
               Case Studies
             </h1>
             <p className="text-xl sm:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Real-world impact stories showcasing how Beelio Technologies transforms 
-              communities across Africa through innovative digital infrastructure solutions.
+              Real-world software development success stories showcasing how Beelio Technologies empowers 
+              African businesses through innovative digital solutions and custom software platforms.
             </p>
           </motion.div>
         </div>

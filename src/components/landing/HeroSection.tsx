@@ -105,15 +105,15 @@ export default function HeroSection() {
             className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-16 max-w-3xl mx-auto"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400">500+</div>
-              <div className="text-gray-300 text-sm">Projects Deployed</div>
+              <div className="text-3xl font-bold text-blue-400">25+</div>
+              <div className="text-gray-300 text-sm">Projects Delivered</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400">50M+</div>
+              <div className="text-3xl font-bold text-blue-400">5K+</div>
               <div className="text-gray-300 text-sm">People Impacted</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-400">15+</div>
+              <div className="text-3xl font-bold text-blue-400">3+</div>
               <div className="text-gray-300 text-sm">Countries Served</div>
             </div>
           </motion.div>
