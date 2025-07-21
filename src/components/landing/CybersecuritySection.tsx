@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { Shield, Lock, Eye, AlertTriangle, CheckCircle, Users } from 'lucide-react'
 
 export default function CybersecuritySection() {
@@ -171,12 +172,16 @@ export default function CybersecuritySection() {
             Beelio Technologies provides the advanced protection needed to secure the continent&apos;s digital transformation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-              Get Security Assessment
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors">
-              Download Security Report
-            </button>
+            <Link href="#contact">
+              <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                Get Security Assessment
+              </button>
+            </Link>
+            <Link href="#case-studies">
+              <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-lg font-semibold transition-colors">
+                View Security Case Studies
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>

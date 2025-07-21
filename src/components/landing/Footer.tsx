@@ -8,38 +8,38 @@ import BeelioLogo from '@/components/BeelioLogo'
 export default function Footer() {
   const navigation = {
     solutions: [
-      { name: 'Smart Energy Monitoring', href: '#' },
-      { name: 'IoT Infrastructure', href: '#' },
-      { name: 'Automation Software', href: '#' },
-      { name: 'Custom AI Platforms', href: '#' },
+      { name: 'Smart Energy Monitoring', href: '#solutions' },
+      { name: 'IoT Infrastructure', href: '#solutions' },
+      { name: 'Automation Software', href: '#software-development' },
+      { name: 'Custom AI Platforms', href: '#software-development' },
     ],
     industries: [
-      { name: 'Energy & Utilities', href: '#' },
-      { name: 'Transport & Mobility', href: '#' },
-      { name: 'Urban Infrastructure', href: '#' },
-      { name: 'Government & Institutions', href: '#' },
+      { name: 'Energy & Utilities', href: '#industries' },
+      { name: 'Transport & Mobility', href: '#industries' },
+      { name: 'Urban Infrastructure', href: '#industries' },
+      { name: 'Government & Institutions', href: '#industries' },
     ],
     company: [
       { name: 'About Us', href: '#about' },
-      { name: 'Our Team', href: '#' },
-      { name: 'Careers', href: '#' },
-      { name: 'News & Updates', href: '#' },
+      { name: 'Our Team', href: '#about' },
+      { name: 'Careers', href: '#contact' },
+      { name: 'News & Updates', href: '#case-studies' },
       { name: 'Contact', href: '#contact' },
     ],
     resources: [
-      { name: 'Case Studies', href: '#' },
-      { name: 'Documentation', href: '#' },
-      { name: 'API Reference', href: '#' },
-      { name: 'Support Center', href: '#' },
-      { name: 'Partner Program', href: '#' },
+      { name: 'Case Studies', href: '#case-studies' },
+      { name: 'Documentation', href: '#software-development' },
+      { name: 'API Reference', href: '#software-development' },
+      { name: 'Support Center', href: '#contact' },
+      { name: 'Partner Program', href: '#contact' },
     ],
   }
 
   const socialLinks = [
-    { name: 'Facebook', icon: Facebook, href: '#' },
-    { name: 'Twitter', icon: Twitter, href: '#' },
-    { name: 'LinkedIn', icon: Linkedin, href: '#' },
-    { name: 'Instagram', icon: Instagram, href: '#' },
+    { name: 'Facebook', icon: Facebook, href: 'https://facebook.com/beelio-technologies' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/beelio_tech' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/company/beelio-technologies' },
+    { name: 'Instagram', icon: Instagram, href: 'https://instagram.com/beelio_technologies' },
   ]
 
   return (

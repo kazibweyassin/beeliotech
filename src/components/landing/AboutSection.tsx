@@ -104,7 +104,7 @@ export default function AboutSection() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
-              <div className="text-2xl font-bold">2019</div>
+              <div className="text-2xl font-bold">2024</div>
               <div className="text-sm">Founded in Kampala</div>
             </div>
           </motion.div>

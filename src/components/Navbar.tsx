@@ -20,8 +20,10 @@ export default function Navbar() {
   const navigationLinks = [
     { href: '#about', label: 'About' },
     { href: '#solutions', label: 'Solutions' },
+    { href: '#cybersecurity', label: 'Cybersecurity' },
+    { href: '#software-development', label: 'Software' },
     { href: '#industries', label: 'Industries' },
-    { href: '#testimonials', label: 'Testimonials' },
+    { href: '#case-studies', label: 'Case Studies' },
     { href: '#contact', label: 'Contact' },
   ]
 

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { Code, Database, Globe, Smartphone, Cloud, Zap } from 'lucide-react'
 
 export default function SoftwareDevelopmentSection() {
@@ -54,7 +55,7 @@ export default function SoftwareDevelopmentSection() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50" id="software-development">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -199,20 +200,24 @@ export default function SoftwareDevelopmentSection() {
             Let&apos;s discuss your project requirements and create something amazing together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg"
-            >
-              Start Your Project
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
-            >
-              View Portfolio
-            </motion.button>
+            <Link href="#contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+              >
+                Start Your Project
+              </motion.button>
+            </Link>
+            <Link href="/case-studies">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-xl font-semibold hover:bg-blue-50 transition-colors"
+              >
+                View Portfolio
+              </motion.button>
+            </Link>
           </div>
         </motion.div>
       </div>
