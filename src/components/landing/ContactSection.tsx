@@ -30,14 +30,14 @@ export default function ContactSection() {
     {
       icon: Mail,
       title: 'Email Us',
-      details: 'hello@beelio.tech',
-      subdetails: 'info@beeliotechnologies.com'
+      details: 'beeliotechnologies@gmail.com',
+      subdetails: 'General inquiries & support'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      details: '+256 700 123 456',
-      subdetails: '+256 800 987 654'
+      details: '+256 786 367 460',
+      subdetails: 'Available 24/7'
     },
     {
       icon: MapPin,
@@ -188,20 +188,33 @@ export default function ContactSection() {
             
             {/* Contact Info Cards */}
             <div className="space-y-6">
-              {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors group">
-                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-lg flex items-center justify-center transition-all">
-                    <info.icon className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-semibold text-gray-900 mb-1">{info.title}</h4>
-                    <p className="text-gray-600">{info.details}</p>
-                    {info.subdetails && (
-                      <p className="text-gray-500 text-sm">{info.subdetails}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
+              {contactInfo.map((info, index) => {
+                let href = '#'
+                if (info.title === 'Email Us') {
+                  href = 'mailto:beeliotechnologies@gmail.com'
+                } else if (info.title === 'Call Us') {
+                  href = 'tel:+256786367460'
+                }
+                
+                return (
+                  <a 
+                    key={index} 
+                    href={href}
+                    className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-blue-50 transition-colors group cursor-pointer block"
+                  >
+                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 group-hover:bg-blue-600 text-blue-600 group-hover:text-white rounded-lg flex items-center justify-center transition-all">
+                      <info.icon className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-1">{info.title}</h4>
+                      <p className="text-gray-600">{info.details}</p>
+                      {info.subdetails && (
+                        <p className="text-gray-500 text-sm">{info.subdetails}</p>
+                      )}
+                    </div>
+                  </a>
+                )
+              })}
             </div>
 
             {/* Schedule Call CTA */}

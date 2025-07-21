@@ -68,11 +68,11 @@ export default function Footer() {
                 <div className="mt-6 space-y-3">
                   <div className="flex items-center text-gray-300">
                     <Mail className="h-5 w-5 mr-3" />
-                    <span>hello@beelio.tech</span>
+                    <span>beeliotechnologies@gmail.com</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <Phone className="h-5 w-5 mr-3" />
-                    <span>+256 700 123 456</span>
+                    <span>+256 786 367 460</span>
                   </div>
                   <div className="flex items-center text-gray-300">
                     <MapPin className="h-5 w-5 mr-3" />
