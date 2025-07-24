@@ -8,11 +8,11 @@ export default function PartnersSection() {
   const testimonials = [
     {
       quote: "Beelio Technologies developed our complete e-commerce platform from scratch. Their expertise in React and Node.js helped us launch 40% faster than expected, and the system handles our growing traffic seamlessly.",
-      author: "David Nsubuga",
+      author: "Waiswa Abdallah",
       role: "CTO",
-      company: "ShopUG Digital Marketplace",
+      company: "kwiqify Digital Marketplace",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
     },
     {
       quote: "The mobile banking app they built for us has revolutionized how our customers interact with our services. The Flutter-based solution works perfectly across all devices and has increased user engagement by 60%.",
@@ -26,9 +26,9 @@ export default function PartnersSection() {
       quote: "Their custom ERP system streamlined our entire business operations. The cloud-based solution they developed has improved our efficiency by 45% and reduced operational costs significantly.",
       author: "Emmanuel Kayongo",
       role: "Operations Director",
-      company: "Rwanda Coffee Cooperative",
+      company: "Vizzar Jobs",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      image: ""
     }
   ]
 

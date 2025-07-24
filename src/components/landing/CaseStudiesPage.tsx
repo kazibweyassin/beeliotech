@@ -28,8 +28,8 @@ export default function CaseStudiesPage() {
       impact: 'Enabled digital transformation for 200+ local businesses, creating 500+ new jobs and facilitating $2M+ in online transactions.',
       testimonial: {
         quote: "Beelio's platform launched us into the digital age. Our online sales now represent 60% of our total revenue.",
-        author: 'David Nsubuga',
-        position: 'Founder, ShopUG Digital Marketplace'
+        author: 'Lukas Sekwati',
+        position: 'Founder, Digital Marketplace'
       }
     },
     {

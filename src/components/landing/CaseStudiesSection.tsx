@@ -8,34 +8,34 @@ import { ArrowRight, MapPin, Calendar } from 'lucide-react'
 export default function CaseStudiesSection() {
   const featuredCases = [
     {
-      id: 'uganda-solar-grid',
-      title: 'Smart Solar Microgrid Implementation',
-      location: 'Gulu District, Uganda',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'Deployed intelligent solar microgrids serving 850 households in rural Uganda with 97.5% uptime.',
-      results: ['850 households connected', '65% reduction in energy costs', '25% increase in local business revenue'],
-      category: 'Energy & Utilities'
+      id: 'local-clinic-management',
+      title: 'Local Clinic Management System',
+      location: 'Nakawa Health Center III',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      description: 'Simple patient record system for a local health center to digitize paper-based patient files and appointment scheduling.',
+      results: ['120+ patients registered', '40% faster patient check-in', 'Digital records for 3 departments'],
+      category: 'Healthcare'
     },
     {
-      id: 'ghana-cybersecurity-shield',
-      title: 'Regional Cybersecurity Infrastructure',
-      location: 'Accra, Ghana',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'Implemented cybersecurity framework protecting 12 government agencies and critical infrastructure.',
-      results: ['12 agencies protected', '95% threat detection rate', '0 successful breaches'],
-      category: 'Cybersecurity'
+      id: 'primary-school-portal',
+      title: 'Primary School Student Portal',
+      location: 'St. Mary\'s Primary School, Entebbe',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      description: 'Basic web portal for parents to view their children\'s grades, attendance, and school announcements.',
+      results: ['180 students tracked', '70% parent adoption rate', '50% reduction in phone calls to school'],
+      category: 'Education'
     },
     {
-      id: 'kenya-transport-optimization',
-      title: 'Traffic Management System',
-      location: 'Nairobi, Kenya',
-      year: '2023',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      description: 'Smart traffic optimization reducing commute times by 25% and improving traffic flow efficiency.',
-      results: ['25% reduction in commute time', '15% improvement in traffic flow', '18% decrease in fuel consumption'],
-      category: 'Transport & Mobility'
+      id: 'local-business-website',
+      title: 'E-commerce Website for Local Business',
+      location: 'Kampala Fashion Store',
+      year: '2024',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      description: 'Modern responsive website with online catalog and WhatsApp integration for a local clothing business.',
+      results: ['200+ products listed', '30% increase in inquiries', 'Mobile-friendly design'],
+      category: 'E-commerce'
     }
   ]
 
@@ -56,8 +56,8 @@ export default function CaseStudiesSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Real-world transformations showcasing how our digital infrastructure solutions 
-            create lasting impact across African communities.
+            Small but impactful digital solutions helping local businesses, schools, and health centers 
+            in Uganda embrace technology and improve their daily operations.
           </p>
         </motion.div>
 
