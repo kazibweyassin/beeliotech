@@ -7,34 +7,34 @@ export default function IndustriesSection() {
   const industries = [
     {
       icon: Building2,
-      title: 'Energy & Utilities',
-      description: 'Smart grid management, renewable energy integration, and efficient distribution systems for sustainable power delivery.',
-      projects: '150+ Projects',
-      highlight: 'Solar microgrids in 50+ villages',
+      title: 'Healthcare Technology',
+      description: 'Digital health solutions including patient management systems, telemedicine platforms, and health data analytics for medical facilities.',
+      projects: '3+ Projects',
+      highlight: 'Electronic health records for clinics',
       image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80'
     },
     {
       icon: Truck,
-      title: 'Transport & Mobility',
-      description: 'Intelligent transportation systems, fleet management, and smart mobility solutions for urban and rural connectivity.',
-      projects: '80+ Systems',
-      highlight: 'Real-time traffic optimization',
+      title: 'Education Technology',
+      description: 'School management systems, student portals, and educational platforms that enhance learning experiences in Uganda.',
+      projects: '2+ Systems',
+      highlight: 'Student information systems',
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
     },
     {
       icon: MapPin,
-      title: 'Urban Infrastructure',
-      description: 'Smart city solutions including waste management, water systems, and urban planning technologies for sustainable growth.',
-      projects: '25+ Cities',
-      highlight: 'Smart waste collection systems',
+      title: 'E-commerce & Business',
+      description: 'Online business platforms, inventory management systems, and digital storefronts for local Ugandan businesses.',
+      projects: '4+ Websites',
+      highlight: 'Online stores with mobile payments',
       image: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
     },
     {
       icon: Shield,
-      title: 'Government & Institutions',
-      description: 'Digital governance platforms, public service automation, and institutional technology infrastructure for efficient operations.',
-      projects: '40+ Institutions',
-      highlight: 'Digital service delivery platforms',
+      title: 'Small Business Solutions',
+      description: 'Custom software solutions for small enterprises including CRM systems, point-of-sale applications, and business automation.',
+      projects: '5+ Solutions',
+      highlight: 'Business management software',
       image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80'
     }
   ]
@@ -56,8 +56,8 @@ export default function IndustriesSection() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            From energy infrastructure to smart cities, we deliver transformative 
-            technology solutions across critical sectors driving Africa&apos;s development.
+            Specializing in software solutions for healthcare, education, e-commerce, and small businesses 
+            across Uganda with a focus on practical, affordable technology.
           </p>
         </motion.div>
 
@@ -123,24 +123,24 @@ export default function IndustriesSection() {
           className="mt-20"
         >
           <div className="bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 rounded-2xl p-12 text-white">
-            <h3 className="text-3xl font-bold text-center mb-12">Our Impact Across Africa</h3>
+            <h3 className="text-3xl font-bold text-center mb-12">Our Growing Impact in Uganda</h3>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-2">295+</div>
-                <div className="text-gray-300">Total Projects</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">14+</div>
+                <div className="text-gray-300">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-2">15</div>
-                <div className="text-gray-300">Countries</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">6+</div>
+                <div className="text-gray-300">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-2">50M+</div>
-                <div className="text-gray-300">Lives Impacted</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">500+</div>
+                <div className="text-gray-300">Users Served</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-blue-400 mb-2">99.9%</div>
-                <div className="text-gray-300">Uptime Rate</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">2024</div>
+                <div className="text-gray-300">Year Founded</div>
               </div>
             </div>
           </div>

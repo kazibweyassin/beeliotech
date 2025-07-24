@@ -10,6 +10,7 @@ import CareersSection from '@/components/landing/CareersSection'
 import ContactSection from '@/components/landing/ContactSection'
 import Footer from '@/components/landing/Footer'
 import Navbar from '@/components/Navbar'
+import ScrollToTop from '@/components/ScrollToTop'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <CareersSection />
       <ContactSection />
       <Footer />
+      <ScrollToTop />
     </main>
   )
 }

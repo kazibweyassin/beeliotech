@@ -75,7 +75,7 @@ export default function ContactSection() {
       icon: MapPin,
       title: 'Visit Us',
       details: 'Kampala, Uganda',
-      subdetails: 'Plot 123, Innovation Hub'
+      subdetails: 'Rubaga Road'
     }
   ]
 
