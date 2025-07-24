@@ -60,6 +60,9 @@ export default function ContactSection() {
       icon: Mail,
       title: 'Email Us',
       details: 'beeliotechnologies@gmail.com',
+      details2: 'info@beelio.tech',
+
+
       subdetails: 'General inquiries & support'
     },
     {
