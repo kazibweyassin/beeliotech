@@ -14,9 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Beelio Technologies | Software Development Company in Uganda | Custom Web & Mobile Apps",
-  description: "Leading software development company in Kampala, Uganda. We build custom websites, mobile apps, school management systems, and business solutions for local enterprises. Founded 2024.",
+  title: "Beelio Technologies | BeelioTech | Beelio - Software Development Company Uganda",
+  description: "Beelio Technologies (BeelioTech) - Leading software development company in Kampala, Uganda. Beelio builds custom websites, mobile apps, school management systems, and business solutions. Founded 2024.",
   keywords: [
+    "Beelio",
+    "BeelioTech", 
+    "Beelio Technologies",
+    "Beelio Tech",
+    "Beelio Uganda",
+    "BeelioTech Uganda",
+    "Beelio Technologies Uganda",
+    "Beelio software company",
+    "BeelioTech software development",
     "software development Uganda",
     "web development Kampala", 
     "mobile app development Uganda",
@@ -25,7 +34,6 @@ export const metadata: Metadata = {
     "e-commerce website Uganda",
     "business software solutions Uganda",
     "custom software development East Africa",
-    "Beelio Technologies",
     "Uganda tech company"
   ],
   authors: [{ name: "Beelio Technologies" }],
@@ -36,8 +44,8 @@ export const metadata: Metadata = {
     canonical: 'https://beelio.tech',
   },
   openGraph: {
-    title: "Beelio Technologies | Software Development Company in Uganda",
-    description: "Custom web & mobile app development, school management systems, and business software solutions in Kampala, Uganda. Professional, affordable, reliable.",
+    title: "Beelio Technologies | BeelioTech | Beelio - Software Development Uganda",
+    description: "Beelio Technologies (BeelioTech) - Custom web & mobile app development, school management systems, and business software solutions in Kampala, Uganda.",
     url: 'https://beelio.tech',
     siteName: 'Beelio Technologies',
     images: [
@@ -53,8 +61,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Beelio Technologies | Software Development Company in Uganda",
-    description: "Custom web & mobile app development, school management systems, and business software solutions in Kampala, Uganda.",
+    title: "Beelio Technologies | BeelioTech | Beelio - Software Development Uganda",
+    description: "Beelio Technologies (BeelioTech) - Custom web & mobile app development, school management systems, and business software solutions in Kampala, Uganda.",
     images: ['/og-image.jpg'],
     creator: '@beelio_tech',
   },
@@ -84,10 +92,10 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Beelio Technologies',
-    alternateName: 'Beelio',
+    alternateName: ['Beelio', 'BeelioTech', 'Beelio Tech'],
     url: 'https://beelio.tech',
     logo: 'https://beelio.tech/logo.png',
-    description: 'Leading software development company in Kampala, Uganda, specializing in custom web applications, mobile apps, and business management systems.',
+    description: 'Beelio Technologies (also known as BeelioTech or simply Beelio) is a leading software development company in Kampala, Uganda, specializing in custom web applications, mobile apps, and business management systems.',
     foundingDate: '2024',
     founder: {
       '@type': 'Person',
