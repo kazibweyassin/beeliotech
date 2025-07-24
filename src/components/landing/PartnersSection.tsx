@@ -12,7 +12,7 @@ export default function PartnersSection() {
       role: "CTO",
       company: "kwiqify Digital Marketplace",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      image: ""
     },
     {
       quote: "The mobile banking app they built for us has revolutionized how our customers interact with our services. The Flutter-based solution works perfectly across all devices and has increased user engagement by 60%.",
