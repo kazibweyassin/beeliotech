@@ -68,9 +68,8 @@ export default function HeroSection() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
-            Beelio Technologies is building the next-gen digital backbone for energy, 
-            mobility, and automation in Africa. Empowering communities with intelligent 
-            solutions that drive sustainable growth.
+            Beelio Technologies is building the next-gen digital backbone for artificial intelligence, energy, 
+            mobility, and automation in Africa. Empowering communities with intelligent solutions that drive sustainable growth.
           </motion.p>
 
           {/* CTA Buttons */}

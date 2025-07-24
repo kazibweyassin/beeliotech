@@ -6,6 +6,7 @@ import SoftwareDevelopmentSection from '@/components/landing/SoftwareDevelopment
 import IndustriesSection from '@/components/landing/IndustriesSection'
 import CaseStudiesSection from '@/components/landing/CaseStudiesSection'
 import PartnersSection from '@/components/landing/PartnersSection'
+import CareersSection from '@/components/landing/CareersSection'
 import ContactSection from '@/components/landing/ContactSection'
 import Footer from '@/components/landing/Footer'
 import Navbar from '@/components/Navbar'
@@ -22,6 +23,7 @@ export default function Home() {
       <IndustriesSection />
       <CaseStudiesSection />
       <PartnersSection />
+      <CareersSection />
       <ContactSection />
       <Footer />
     </main>
