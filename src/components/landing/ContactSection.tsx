@@ -189,9 +189,9 @@ export default function ContactSection() {
                   <option value="consultation">Free Consultation</option>
                   <option value="website">Website Development</option>
                   <option value="mobile-app">Mobile App Development</option>
-                  <option value="school-management">School Management System</option>
-                  <option value="hospital-management">Hospital Management System</option>
-                  <option value="ecommerce">E-commerce Platform</option>
+                  <option value="school-management">Cyber Security Solutions</option>
+                  <option value="hospital-management">AI & ML Solutions</option>
+                  <option value="ecommerce">System Design Solutions</option>
                   <option value="custom-software">Custom Software Development</option>
                   <option value="partnership">Partnership Opportunity</option>
                 </select>
@@ -217,7 +217,7 @@ export default function ContactSection() {
               {submitStatus === 'success' && (
                 <div className="flex items-center space-x-2 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-green-800">Message sent! We&apos;ve opened your email client to send to beeliotechnologies@gmail.com</span>
+                  <span className="text-green-800">Email sent!</span>
                 </div>
               )}
 
