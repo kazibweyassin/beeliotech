@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Calendar, CheckCircle, AlertCircle } from 'lucide-react'
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -22,6 +23,43 @@ export default function ContactSection() {
     setSubmitStatus('idle')
 
     try {
+      // Method 1: Try EmailJS if configured
+      const emailjsUserId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+      const emailjsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
+      const emailjsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
+
+      if (emailjsUserId && emailjsServiceId && emailjsTemplateId && 
+          emailjsUserId !== 'your_emailjs_user_id_here') {
+        
+        // Initialize EmailJS
+        emailjs.init(emailjsUserId)
+        
+        // Send email via EmailJS
+        await emailjs.send(
+          emailjsServiceId,
+          emailjsTemplateId,
+          {
+            from_name: formData.name,
+            from_email: formData.email,
+            company: formData.company || 'Not provided',
+            service: formData.service,
+            message: formData.message,
+            to_email: 'beeliotechnologies@gmail.com'
+          }
+        )
+        
+        setSubmitStatus('success')
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          message: '',
+          service: 'consultation'
+        })
+        return
+      }
+
+      // Method 2: Fallback to API route
       const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -33,7 +71,7 @@ export default function ContactSection() {
       const result = await response.json()
 
       if (response.ok) {
-        // Open mailto link to beeliotechnologies@gmail.com
+        // Open mailto link as fallback
         if (result.mailtoLink) {
           window.open(result.mailtoLink)
         }
@@ -53,7 +91,7 @@ export default function ContactSection() {
       console.error('Error submitting form:', error)
       setSubmitStatus('error')
       
-      // Fallback: Create direct mailto link
+      // Final fallback: Direct mailto link
       const mailtoLink = `mailto:beeliotechnologies@gmail.com?subject=Contact from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nService: ${formData.service}\n\nMessage:\n${formData.message}`)}`
       window.open(mailtoLink)
     } finally {
@@ -217,7 +255,7 @@ export default function ContactSection() {
               {submitStatus === 'success' && (
                 <div className="flex items-center space-x-2 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-green-800">Email sent!</span>
+                  <span className="text-green-800">Message sent successfully! We&apos;ll get back to you within 24 hours.</span>
                 </div>
               )}
 
