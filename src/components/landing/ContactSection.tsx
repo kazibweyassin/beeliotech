@@ -22,27 +22,40 @@ export default function ContactSection() {
     setSubmitStatus('idle')
 
     try {
-      // Simulate form submission (replace with actual API call)
-      await new Promise(resolve => setTimeout(resolve, 2000))
-      
-      // In a real implementation, you would send this to your backend API or email service
-      console.log('Form submitted:', formData)
-      
-      // Create mailto link as fallback
-      const mailtoLink = `mailto:beeliotechnologies@gmail.com?subject=Contact from ${formData.name}&body=Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0ACompany: ${formData.company}%0D%0AService: ${formData.service}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`
-      window.open(mailtoLink)
-      
-      setSubmitStatus('success')
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        message: '',
-        service: 'consultation'
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
       })
+
+      const result = await response.json()
+
+      if (response.ok) {
+        // Open mailto link to beeliotechnologies@gmail.com
+        if (result.mailtoLink) {
+          window.open(result.mailtoLink)
+        }
+        
+        setSubmitStatus('success')
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          message: '',
+          service: 'consultation'
+        })
+      } else {
+        throw new Error(result.error || 'Failed to send message')
+      }
     } catch (error) {
       console.error('Error submitting form:', error)
       setSubmitStatus('error')
+      
+      // Fallback: Create direct mailto link
+      const mailtoLink = `mailto:beeliotechnologies@gmail.com?subject=Contact from ${encodeURIComponent(formData.name)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nService: ${formData.service}\n\nMessage:\n${formData.message}`)}`
+      window.open(mailtoLink)
     } finally {
       setIsSubmitting(false)
     }
@@ -174,10 +187,12 @@ export default function ContactSection() {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                 >
                   <option value="consultation">Free Consultation</option>
-                  <option value="energy">Smart Energy Solutions</option>
-                  <option value="iot">IoT Infrastructure</option>
-                  <option value="automation">Automation Software</option>
-                  <option value="ai">Custom AI Platforms</option>
+                  <option value="website">Website Development</option>
+                  <option value="mobile-app">Mobile App Development</option>
+                  <option value="school-management">School Management System</option>
+                  <option value="hospital-management">Hospital Management System</option>
+                  <option value="ecommerce">E-commerce Platform</option>
+                  <option value="custom-software">Custom Software Development</option>
                   <option value="partnership">Partnership Opportunity</option>
                 </select>
               </div>
@@ -202,7 +217,7 @@ export default function ContactSection() {
               {submitStatus === 'success' && (
                 <div className="flex items-center space-x-2 p-4 bg-green-50 border border-green-200 rounded-lg">
                   <CheckCircle className="h-5 w-5 text-green-600" />
-                  <span className="text-green-800">Message sent successfully! We&apos;ll get back to you soon.</span>
+                  <span className="text-green-800">Message sent! We&apos;ve opened your email client to send to beeliotechnologies@gmail.com</span>
                 </div>
               )}
 
